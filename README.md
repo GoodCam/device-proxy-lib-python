@@ -1,5 +1,7 @@
 # GoodCam Device Proxy
 
+[![Documentation Status](https://readthedocs.org/projects/gcdevproxy-py/badge/?version=latest)](https://gcdevproxy-py.readthedocs.io/en/latest/?badge=latest)
+
 This library simplifies creating HTTP proxies that can be used to communicate
 with GoodCam devices in various networks. GoodCam devices contain a
 [built-in client](https://goodcam.github.io/goodcam-api/#tag/cloud) that
