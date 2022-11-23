@@ -18,6 +18,8 @@ from ctypes import (
     c_void_p,
 )
 
+from importlib import resources
+
 thread_local = threading.local()
 
 logger = logging.getLogger(__name__)
@@ -78,7 +80,7 @@ class DeviceProxyLib:
     CLIENT_HANDLER = CFUNCTYPE(None, c_void_p, c_void_p, c_void_p)
 
     def __init__(self):
-        current_dir = os.path.dirname(__file__)
+        current_dir = resources.files('gcdevproxy')
 
         if sys.platform in ('linux', 'linux2'):
             lib_file = f'lib{self.lib_name}.so'

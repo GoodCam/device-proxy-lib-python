@@ -29,6 +29,16 @@ Even though the Rust version of this library can be built for any platform
 supported by Rust, this Python wrapper is currently available only for Linux
 systems.
 
+The Rust version of this library also requires OpenSSL (version 1.0.1 or newer)
+or LibreSSL (version 2.5 or newer). Ubuntu/Debian users can install OpenSSL
+development files using::
+
+   sudo apt-get install libssl-dev
+
+Fedora users can install them using::
+
+   sudo dnf install openssl-devel
+
 Usage example
 -------------
 
