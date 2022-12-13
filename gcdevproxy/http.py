@@ -10,7 +10,7 @@ class Authorization(NativeObject):
     """Device authorization."""
 
     def __init__(self, raw_ptr: c_void_p) -> None:
-        super().__init__(raw_ptr, None)
+        super().__init__(raw_ptr, lib.gcdp__authorization__free)
 
     @property
     def device_id(self) -> str:

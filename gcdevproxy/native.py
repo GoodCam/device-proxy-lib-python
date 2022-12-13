@@ -55,7 +55,7 @@ def get_string(native_function, *args):
 class DeviceProxyLib:
     lib_name = 'gcdevproxy'
 
-    min_version = (0, 1, 0)
+    min_version = (0, 2, 0)
 
     LOG_LEVEL_TRACE = 0
     LOG_LEVEL_DEBUG = 1
@@ -197,6 +197,7 @@ class DeviceProxyLib:
 
                 ('gcdp__authorization__get_device_id', [c_void_p, c_char_p, POINTER(c_size_t)]),
                 ('gcdp__authorization__get_device_key', [c_void_p, c_char_p, POINTER(c_size_t)]),
+                ('gcdp__authorization__free', [c_void_p]),
 
                 ('gcdp__request__get_method', [c_void_p], c_char_p),
                 ('gcdp__request__get_uri', [c_void_p, c_char_p, POINTER(c_size_t)]),
