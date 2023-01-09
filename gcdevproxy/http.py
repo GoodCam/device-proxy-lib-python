@@ -140,14 +140,21 @@ class Response:
        :type: bytes
     """
 
-    def __init__(self, status_code: int) -> None:
+    def __init__(
+        self,
+        status_code: int,
+        headers: Optional[List[Tuple[str, str]]] = None,
+        body: Optional[bytes] = None,
+    ) -> None:
         """Create a new response with empty body and a given status code.
 
         :param status_code: HTTP status code
+        :param body: response body
+        :param headers: response headers
         """
         self.status_code = status_code
-        self.headers: List[Tuple[str, str]] = []
-        self.body = b''
+        self.headers: List[Tuple[str, str]] = headers or []
+        self.body = body or b""
 
     def append_header(self, name: str, value: str) -> None:
         """Append a given HTTP header.
