@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.4 (2023-01-09)
+
+* Allow constructing responses with body and headers as `__init__` arguments
+* Improve logging in situations when a device is registered but forwarding a
+  client request fails for some reason
+
 ## v0.1.3 (2022-11-13)
 
 * Fix invalid memory access when reading data from the Authorization object
