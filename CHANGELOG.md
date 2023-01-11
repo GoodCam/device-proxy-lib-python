@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.5 (2023-01-11)
+
+* Do not forward hop-by-hop and non-http2 headers to the device and fix
+  connection upgrades
+
 ## v0.1.4 (2023-01-09)
 
 * Allow constructing responses with body and headers as `__init__` arguments
