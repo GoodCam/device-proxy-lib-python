@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.6 (2023-01-23)
+
+* Add missing Connection and Upgrade headers in responses to HTTP/1.1
+  connection upgrades
+
 ## v0.1.5 (2023-01-11)
 
 * Do not forward hop-by-hop and non-http2 headers to the device and fix
