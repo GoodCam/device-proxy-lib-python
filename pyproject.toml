@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gcdevproxy"
-version = "0.1.6"
+version = "0.1.7"
 description = "GoodCam Device Proxy lib"
 authors = [
   { name="GoodCam", email="dev@goodcam.io" },
