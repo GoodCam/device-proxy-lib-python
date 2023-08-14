@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.8 (2023-08-14)
+
+* Lower the memory footprint
+
 ## v0.1.7 (2023-08-10)
 
 * Fix poll after error in the native lib
