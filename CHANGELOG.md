@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.9 (2023-08-21)
+
+* Add certificate renew timeout for Let's Encrypt
+* Mitigate possible slowloris attacks
+
 ## v0.1.8 (2023-08-14)
 
 * Lower the memory footprint
