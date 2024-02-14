@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.10 (2024-02-14)
+
+* Update the native library
+* Fix response header construction
+
 ## v0.1.9 (2023-08-21)
 
 * Add certificate renew timeout for Let's Encrypt

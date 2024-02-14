@@ -184,9 +184,8 @@ class Response:
 
         response = NativeResponse(raw_ptr)
 
-        for name, values in self.headers:
-            for value in values:
-                response.append_header(name, value)
+        for name, value in self.headers:
+            response.append_header(name, value)
 
         response.set_body(self.body)
 

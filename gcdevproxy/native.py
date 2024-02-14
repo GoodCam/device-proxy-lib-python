@@ -55,7 +55,7 @@ def get_string(native_function, *args):
 class DeviceProxyLib:
     lib_name = 'gcdevproxy'
 
-    min_version = (0, 2, 0)
+    min_version = (0, 3, 0)
 
     LOG_LEVEL_TRACE = 0
     LOG_LEVEL_DEBUG = 1
